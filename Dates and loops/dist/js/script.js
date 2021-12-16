@@ -1,15 +1,15 @@
 console.log("test");
 
-let today= new Date();
+let today = new Date();
 console.log(today);
 
-let newyear=new Date(2021, 11, 31,23 ,59, 59, 59);
+let newyear = new Date(2021, 11, 31, 23, 59, 59, 59);
 console.log(newyear);
 
-let todayms=new Date(0);
+let todayms = new Date(0);
 console.log(todayms);
 
-// Date formats
+//Date formats
 
 // 2021-12-04 ISO Date
 
@@ -24,32 +24,48 @@ console.log(today.getTime());
 
 console.log(today.getFullYear());
 
-// 
-// Ciklai - Loops
-// 
-//  for - perbega per koda nustatyta kartu skaiciu
-// while - perbega per koda tiek kartu kol yra teisinga salyga
+const months = ["Sausis","Vasaris","Kovas","Balandis","Geguze","Birzelis","Liepa","Rugpjutis","Rugsejis","Spalis","Lapkritis","Gruodis"];
 
-for (let i=0; i<6;i++) {
+console.log(today.getMonth());
+console.log(months[today.getMonth()]);
+
+console.log(today.getDate());
+
+// getHours() getMinutes() getSeconds() getMiliseconds()
+
+const days = ["Sekmadienis", "Pirmadienis", "Antradienis","Treciadienis","Ketvirtadienis","Penktadienis","Sestadienis"];
+
+console.log(days[today.getDay()]);
+
+///////////////////////////////////////////////////////////////////
+//Ciklai - Loops
+
+//for - perbega per koda nustatyta kartu skaiciu
+//while - perbega per koda tiek kartu kol yra teisinga salyga
+
+for (let i = 0; i < 6; i++) {
     console.log(i);
+    
+    
 }
 
 const numbers = [1,2,3,4,5,6,7,8,9,10];
 
-for (let i=0; i<numbers.length; i++){
+for (let i = 0; i<numbers.length; i++){
     numbers[i] += 1;
 }
+
 console.log(numbers);
 
-let i=0;
-while (i<10) {
-    console.log("Number is "+i);
-    i++;
+let a = 0;
+while (a<10) {
+    console.log("Number is "+a);
+    a++;
 }
 
 for (let i=0; i<numbers.length; i++){
-    if (numbers[i]===5){
-        numbers[i]=50;
+    if(numbers[i]===5){
+        numbers[i] = 50;
     }
 }
 
